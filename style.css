@@ -1,0 +1,171 @@
+@font-face {
+    font-family: GSMain;
+    src: url("assets/Latin-Modern-Mono/lmmonoproplt10-bold.otf") format("opentype");
+}
+
+@font-face {
+    font-family: GSProject;
+    src: url("assets/Latin-Modern-Mono/lmmonoprop10-regular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: GSProjectSub;
+    src: url("assets/Latin-Modern-Mono/lmmonoproplt10-regular.otf") format("opentype");
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    margin: auto 0;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 20vw 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:  
+    " . severinworks ."
+    " wordspot imagespot huh ";
+    justify-items: center;
+    align-items: center;
+}
+
+.container2 {
+    height: 100%;
+    width: 100%;
+}
+
+header {
+    grid-area: severinworks;
+    align-self: flex-end;
+
+}
+
+h1 {
+    font-family:  forma-djr-deck,  sans-serif; 
+    font-weight:  500; 
+    font-style:  normal; 
+    font-size: 6rem;
+    margin-bottom: 0;
+}
+
+nav {
+    display: flex;
+    height: 20%;
+    width: 100vw;
+    /* padding-bottom: 1rem;
+    padding-top: 2rem; */
+}
+
+h2 {
+    font-family:  forma-djr-deck,  sans-serif; 
+    font-weight:  500; 
+    font-style:  normal; 
+    font-size: 3rem;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+#wordsimage {
+    grid-area: wordspot;
+    width: 20vh;
+    height: 20vh;
+    justify-self: end;
+}
+
+#projectwords {
+    width: 100%;
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: column;
+
+}
+
+#imagesnav {
+    width: 13vh;
+    height: 13vh;
+    margin-left: auto;
+    align-self: flex-end;
+    margin-right: 3vw;
+    margin-bottom: 5vh;
+}
+
+#wordsnav {
+    width: 13vh;
+    height: 13vh;
+    margin-right: auto;
+    align-self: flex-end;
+    margin-left: 3vw;
+    margin-bottom: 5vh;
+}
+
+#imagesimage {
+    grid-area: imagespot;
+    width: 20vh;
+    height: 20vh;
+    justify-self: center;
+}
+
+#questionimage {
+    grid-area: huh;
+    width: 20vh;
+    height: 20vh;
+    justify-self: start;
+}
+
+h3 {
+    font-family: GSProjectSub;
+    color:rgb(139, 139, 139);
+    font-size: 1.5em;
+}
+
+h3 span {
+    color: black;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+}
+
+.accordion {
+    display: flex;
+    cursor: pointer;
+    padding-inline-start: 3vw;
+    background-color: white;
+    width: max-content;
+    border: none;
+    text-align: left;
+    outline: none;
+    transition: 0.4s;
+
+  }
+  
+  /* .active, .accordion:hover {
+    background-color: #ccc;
+  } */
+  
+  .accordion:after {
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: "\0020\0028\2212\0029";
+    align-self: center;
+    color: rgb(112, 112, 112);
+  }
+  
+  .panel {
+    width: 68%;
+    margin: 0 auto;
+    /* padding: 0 4vw; */
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
