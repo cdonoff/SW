@@ -71,8 +71,8 @@ h2 {
 
 #wordsimage {
     grid-area: wordspot;
-    width: 20vh;
-    height: 20vh;
+    width: 10rem;
+    height: 10rem;
     justify-self: end;
 }
 
@@ -104,15 +104,15 @@ h2 {
 
 #imagesimage {
     grid-area: imagespot;
-    width: 20vh;
-    height: 20vh;
+    width: 10rem;
+    height: 10rem;
     justify-self: center;
 }
 
 #questionimage {
     grid-area: huh;
-    width: 20vh;
-    height: 20vh;
+    width: 10rem;
+    height: 10rem;
     justify-self: start;
 }
 
