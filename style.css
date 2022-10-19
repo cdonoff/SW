@@ -48,6 +48,10 @@ nav {
     justify-content: space-evenly;
 }
 
+.instagram-media {
+    width: 100%;
+}
+
 #imagesnav {
     width: 12vw;
     height: 12vw;
@@ -124,7 +128,7 @@ h1 {
 h3 {
     font-family: GSProject;
     color:rgb(139, 139, 139);
-    font-size: 1.13em;
+    font-size: 1.5em;
 }
 
 h3 span {
@@ -133,7 +137,8 @@ h3 span {
 
 p {
     font-family: GSProjectSub;
-    font-size: 0.5em;
+    font-size: 1em;
+    margin-top: 0;
 }
 
 img {
@@ -171,13 +176,33 @@ img {
   }
   
   .panel {
+    display: flex;
+    flex-direction:column;
     width: 68%;
     margin: 0 auto;
     /* padding: 0 4vw; */
     background-color: white;
     max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    transition: max-height 0.5s ease-out;
+  }
+
+  .albumviewer {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-template-rows: repeat(auto-fill, minmax(250px, 1fr));
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 44vh;
+}
+
+.projectdesc {
+    height: 22vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+
   }
 
 @media only screen and (min-width: 580px) {
