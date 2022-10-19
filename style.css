@@ -23,7 +23,7 @@ html,
 body {
     height: 100vh;
     width: 100%;
-    margin: auto 0;
+    margin: 0;
 }
 
 .container {
@@ -42,17 +42,10 @@ body {
 
 nav {
     display: flex;
-    height: minmax(3rem, max-content);
-    width: 100vw;
+    height: max-content;
+    width: auto;
     padding: 1rem;
-}
-
-#wordsimage {
-    grid-area: wordspot;
-    width: 3rem;
-    height: 3rem;
-    justify-self: end;
-    align-self: start;
+    justify-content: space-between;
 }
 
 #imagesnav {
@@ -73,18 +66,26 @@ nav {
     margin-top: 0.5em;
 }
 
+#wordsimage {
+    grid-area: wordspot;
+    width: 20vw;
+    height: 20vw;
+    justify-self: end;
+    align-self: start;
+}
+
 #imagesimage {
     grid-area: imagespot;
-    width: 3rem;
-    height: 3rem;
+    width: 20vw;
+    height: 20vw;
     justify-self: center;
     align-self: start;
 }
 
 #questionimage {
     grid-area: huh;
-    width: 3rem;
-    height: 3rem;
+    width: 20vw;
+    height: 20vw;
     justify-self: start;
     align-self: start;
 }
@@ -99,16 +100,15 @@ h1 {
     font-family:  forma-djr-deck,  sans-serif; 
     font-weight:  500; 
     font-style:  normal; 
-    font-size: 2rem;
+    font-size: 3rem;
     margin-bottom: 0;
 }
 
 #projectwords {
-    width: 100%;
-    margin-top: 3vw;
     display: flex;
     flex-direction: column;
-
+    width: auto;
+    margin-top: 3vw;
 }
 
 #subhead {
@@ -210,9 +210,10 @@ img {
 
     nav {
         display: flex;
-        height: minmax(3rem, max-content);
-        width: 100%;
+        height: max-content;
+        width: auto;
         padding: 1rem;
+        justify-content: space-between;
     }
 
     #subhead {
