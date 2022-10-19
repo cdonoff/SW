@@ -146,7 +146,7 @@ img {
     cursor: pointer;
     padding-inline-start: 3vw;
     background-color: white;
-    width: max-content;
+    width: auto;
     border: none;
     text-align: left;
     outline: none;
