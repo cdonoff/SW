@@ -45,7 +45,7 @@ nav {
     height: max-content;
     width: auto;
     padding: 1rem;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 #imagesnav {
@@ -53,8 +53,7 @@ nav {
     height: 12vw;
     margin-left: auto;
     align-self: end;
-    margin-right: 3vw;
-    margin-top: 0.5em;
+    justify-self: end;
 }
 
 #wordsnav {
@@ -62,8 +61,7 @@ nav {
     height: 12vw;
     margin-right: auto;
     align-self: end;
-    margin-left: 3vw;
-    margin-top: 0.5em;
+    justify-self: start;
 }
 
 #wordsimage {
@@ -126,7 +124,7 @@ h1 {
 h3 {
     font-family: GSProject;
     color:rgb(139, 139, 139);
-    font-size: 1em;
+    font-size: 1.13em;
 }
 
 h3 span {
@@ -182,7 +180,7 @@ img {
     transition: max-height 0.2s ease-out;
   }
 
-@media only screen and (min-width: 500px) {
+@media only screen and (min-width: 580px) {
 
     #wordsimage {
         grid-area: wordspot;
@@ -250,21 +248,13 @@ img {
     }
 
     #imagesnav {
-        width: 6rem;
-        height: 6rem;
-        margin-left: auto;
-        align-self: end;
-        margin-right: 3vw;
-        margin-top: 0.5em;
+        width: 3rem;
+        height: 3rem;
     }
     
     #wordsnav {
-        width: 6rem;
-        height: 6rem;
-        margin-right: auto;
-        align-self: end;
-        margin-left: 3vw;
-        margin-top: 0.5em;
+        width: 3rem;
+        height: 3rem;
     }
 
     h3 {
